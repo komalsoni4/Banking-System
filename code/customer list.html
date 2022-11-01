@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>View Customers</title>
+
+  <!-- Googlefont -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS style sheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="customerlist.css">
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- title section -->
+ 
+  <section id="title">
+    <div class="container-fluid">
+      
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <div class="row align-items-end">
+           <div class="col-md-2">
+            <i id='nav-logo' class='fa fa-bank' style='color: white ; font-size: 1.8em; ' ></i>
+           </div>
+           <div class="col-md-5 ">
+              <h2 class="navbar-heading">Banking Platform</h2>
+          </div> 
+           
+          </div>
+        
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About TSF Bank</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      <div class="txt">
+        <!-- yha animation add krna hai ki welcome bank pr jump krke aaye -->
+       
+       
+       
+          <h1 class="big-heading">Welcome to</h1>
+          <h2 class="big-heading2">THE SPARKS BANK</h2>
+       
+        <div> <i class="banK fa fa-bank" ></i></div>
+       
+       
+        <br>
+      </div>
+     
+     
+    </div>
+   
+  </section>
+  <section id="featured">
+    
+     <div class="row">
+      <div class="col-sm-4">
+        <div class="change">
+          <i class="fa fa-user"></i>
+          <p class="namee">Daud Ibrahim</p>
+          <button onclick="BringDetail()" data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+       
+        
+        </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee"> aditya gupta</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+       </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee">  Ayush Sharma</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+       </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee"> Karan Sehgal</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+        </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee">  Tara tak</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+       </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee">  Vijay rana</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+       </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee">  Pura Sharmaa</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+       </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee">Aviral khan</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+        </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee">Rajesh Purohit</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        
+        </div>
+        </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee">Sagar Tiwari</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+        </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee"> Mukul Singh</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+       </div>
+      <div class="col-sm-4">
+        <div class="change">
+        <i class="fa fa-user"></i>
+        <p class="namee">Rohit Verma</p>
+        <button  data-toggle="modal" data-target="#viewInfo">view</button>
+        </div>
+        </div>
+     </div>
+<!-- modals view customer -->
+<div class="modal fade" id="viewInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="exampleModalLabel">   <!-- isko display flex krna hai -->
+          <i class="fa fa-user"></i>
+          <span>Rohit Verma</span>          <!-- change hona hai dynamicaly -->
+        </h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <strong class="well">Email Id :</strong>           
+      <p>rohit@gmail.com</p>                        <!-- change hona hai dynamicaly -->
+      <strong class="well">Bank Balance :</strong>
+      <p id="daudBankBalance">80200</p>              <!-- change hona hai dynamicaly -->
+        
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#sendMoney">Transfer Money</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#transactionHistory">view History</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+ 
+
+
+    <!-- modals of customer id babao jisme transfer money wala buttton ho aur baaki customer ke naam dekhne ka v  -->
+  
+ 
+    <!--Modal Send Money-->
+    <div class="modal fade" id="sendMoney" tableindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="input-group mb-3">
+                <input type="text" id="enterSName" class="form-control" placeholder="Sender's Username" aria-label="Sender's Username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" id="enterName" class="form-control" placeholder="Recipient's Username" aria-label="Recipient's Username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">₹</span>
+                </div>
+                <input type="text" id="enterAmount" class="form-control" placeholder="Enter Amount" aria-label="Amount">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal"> Send Money </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal Transaction History-->
+    <div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ol id="transaction-history-body">
+
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <footer class="white-section" id="footer">
+      <br>
+        <br>
+          <br>
+      <div class="container-fluid">
+
+        <a href="" style="text-decoration:none !important;">
+          <i class="social-icon fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="" style="text-decoration: none;">
+          <i class="social-icon fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="" >
+          <i class="social-icon fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="" >
+          <i class="social-icon fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="" >
+          <i class="social-icon fab fa-github fa-2x"></i>
+        </a>
+        <br>
+        <br>
+        <p class="f">Banking System made by Komal Soni</p>
+        <br>
+       
+      </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+</body>
+</html>6
